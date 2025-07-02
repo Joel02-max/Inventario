@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FjJE0QS41Ms=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yelts\\OneDrive\\Documentos\\PA\\ProyectoFinalAuditoria\\Gestion_Inventario\\MyApp.Entities\\MyApp.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yelts\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "MyApp.Presentation\\MyApp.Presentation.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "MyApp.Entities\\MyApp.Entities.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "MyApp.DataAccess\\MyApp.DataAccess.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "MyApp.Business\\MyApp.Business.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

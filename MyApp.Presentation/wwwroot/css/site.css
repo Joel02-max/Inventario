@@ -1,0 +1,472 @@
+
+<style >
+.pastel-header {
+    background-color: #fdf1f1; /* rosado claro */
+}
+
+.pastel-body {
+    background-color: #fefefe;
+}
+
+.pastel-footer {
+    background-color: #f7fbe9; /* verde claro */
+}
+
+.pastel-input {
+    background-color: #fcfcfc;
+}
+
+.btn-pastel-primary {
+    background-color: #a8dadc;
+    border-color: #a8dadc;
+    color: #000;
+}
+
+    .btn-pastel-primary:hover {
+        background-color: #91cfd1;
+        border-color: #91cfd1;
+        color: #000;
+    }
+
+.btn-pastel-secondary {
+    background-color: #ffe5b4;
+    border-color: #ffe5b4;
+    color: #000;
+}
+
+    .btn-pastel-secondary:hover {
+        background-color: #ffd391;
+        border-color: #ffd391;
+        color: #000;
+    }
+
+</style >
+.card-gray-border {
+    border: 2px solid #ccc;
+}
+
+.card-crema {
+    background-color: #fff8dc;
+    color: #333;
+}
+/* Total Artículos */
+.card-verde {
+    background-color: #f1f8e9;
+    color: #333;
+}
+/* Disponibles */
+.card-coral {
+    background-color: #ffecb3;
+    color: #333;
+}
+/* En Préstamo */
+.card-celeste {
+    background-color: #e0f7fa;
+    color: #333;
+}
+/* Activos */
+.card-rosa {
+    background-color: #fce4ec;
+    color: #333;
+}
+/* Pendientes */
+.card-gris {
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Usuarios */
+.badge-warning {
+    background-color: #ffe082;
+}
+
+.badge-info {
+    background-color: #81d4fa;
+}
+
+.badge-primary {
+    background-color: #b39ddb;
+}
+
+.badge-success {
+    background-color: #aed581;
+}
+
+.badge-danger {
+    background-color: #ef9a9a;
+}
+
+.badge-secondary {
+    background-color: #e0e0e0;
+}
+
+</style >
+
+.section-title {
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-stats {
+    background-color: #fffde7; /* amarillo claro */
+}
+
+.section-recents {
+    background-color: #e0f7fa; /* celeste */
+}
+
+.section-overdue {
+    background-color: #ffebee; /* rosa claro */
+}
+
+.card-stats-crema {
+    background-color: #fff8dc;
+    color: #333;
+}
+
+.card-stats-verde {
+    background-color: #f1f8e9;
+    color: #333;
+}
+
+.card-stats-coral {
+    background-color: #ffecb3;
+    color: #333;
+}
+
+.card-stats-celeste {
+    background-color: #e0f2f1;
+    color: #333;
+}
+
+.card-stats-rosa {
+    background-color: #fce4ec;
+    color: #333;
+}
+
+.card-stats-gris {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.badge-warning {
+    background-color: #ffe082;
+}
+
+.badge-info {
+    background-color: #81d4fa;
+}
+
+.badge-primary {
+    background-color: #b39ddb;
+}
+
+.badge-success {
+    background-color: #aed581;
+}
+
+.badge-danger {
+    background-color: #ef9a9a;
+}
+
+.badge-secondary {
+    background-color: #e0e0e0;
+}
+
+</style >
+
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/* Mejoras visuales personalizadas */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.btn {
+    border-radius: 0.375rem;
+}
+
+.table th {
+    font-weight: 600;
+    border-top: none;
+}
+
+.badge {
+    font-size: 0.75em;
+}
+
+/* Estados de botones de filtro */
+.btn-group .btn.active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+
+/* Mejoras para alertas */
+.alert {
+    border-radius: 0.5rem;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    border-left-color: var(--bs-success);
+}
+
+.alert-danger {
+    border-left-color: var(--bs-danger);
+}
+
+.alert-warning {
+    border-left-color: var(--bs-warning);
+}
+
+.alert-info {
+    border-left-color: var(--bs-info);
+}
+
+/* Estilos para estados de préstamos */
+.badge.bg-warning {
+    color: #eb8d0a;
+}
+
+/* Mejorar apariencia de códigos */
+code {
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+}
+
+/* Animaciones suaves */
+.btn, .card, .alert {
+    transition: all 0.15s ease-in-out;
+}
+
+    .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Estilos responsivos para tablas */
+@media (max-width: 768px) {
+    .table-responsive table,
+    .table-responsive thead,
+    .table-responsive tbody,
+    .table-responsive th,
+    .table-responsive td,
+    .table-responsive tr {
+        display: block;
+    }
+
+        .table-responsive thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    .table-responsive tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .table-responsive td {
+        border: none;
+        position: relative;
+        padding-left: 50% !important;
+        text-align: right;
+    }
+
+        .table-responsive td:before {
+            content: attr(data-label) ": ";
+            position: absolute;
+            left: 6px;
+            width: 45%;
+            text-align: left;
+            font-weight: bold;
+        }
+}
+
+
+
+/* Indicadores de carga */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+    .btn-loading::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -8px;
+        border: 2px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s ease infinite;
+    }
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+<style >
+.card-crema {
+    background-color: #fffde7;
+    color: #333;
+    border: 1px solid #f5f5dc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.badge-warning {
+    background-color: #ffe082;
+}
+
+.badge-info {
+    background-color: #81d4fa;
+}
+
+.badge-primary {
+    background-color: #b39ddb;
+}
+
+.badge-success {
+    background-color: #aed581;
+}
+
+.badge-danger {
+    background-color: #ef9a9a;
+}
+
+.badge-secondary {
+    background-color: #e0e0e0;
+}
+
+.dashboard-header {
+    background-color: #fff8e1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+}
+
+.card-body h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .card-body h4 {
+        font-size: 1.4rem;
+    }
+}
+<style >
+
+/*Loans*/
+
+/* Encabezado verde-amarillo */
+thead.table-yellowgreen {
+    background-color: #a3be8c; /* Verde amarillento medio */
+    color: #334e2e; /* Texto oscuro para contraste */
+}
+
+/* Filas alternas */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e6f0d4; /* Verde muy suave pastel */
+}
+
+/* Botones personalizados */
+.btn-yellowgreen {
+    background-color: #cddc39; /* Verde amarillento pastel */
+    color: #334e2e;
+    border-color: #cddc39;
+}
+
+    .btn-yellowgreen:hover,
+    .btn-yellowgreen:focus {
+        background-color: #b0ca2e;
+        color: #222a12;
+        border-color: #b0ca2e;
+    }
+
+.btn-outline-yellowgreen {
+    color: #a3be8c;
+    border-color: #a3be8c;
+}
+
+    .btn-outline-yellowgreen:hover,
+    .btn-outline-yellowgreen:focus {
+        background-color: #a3be8c;
+        color: white;
+    }
+
+/* Botón solicitar nuevo préstamo con color más suave y fresco */
+.btn-newloan {
+    background-color: #e9f5db; /* Muy suave */
+    color: #6a7b2f; /* Verde amarillento oscuro */
+    border: 1px solid #a3be8c;
+}
+
+    .btn-newloan:hover,
+    .btn-newloan:focus {
+        background-color: #d2e3b8;
+        color: #334e2e;
+        border-color: #8ca044;
+    }
+
+</style >
+
